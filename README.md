@@ -19,6 +19,9 @@ The app features a clean UI with search functionality, random recipe generation,
 - Displays search results dynamically in a results section.  
 - Click on a recipe card to open a **Recipe Modal** showing detailed information (ingredients, instructions, etc.).
 
+### 🏠 Home Page (Footer) - favourites list
+- Shows the list of recipes which was selected as favourite❤️. 
+
 ### 🎲 Random Recipe
 - Contains a **“Get Random Recipe”** button.  
 - On click, a random recipe is fetched and displayed.  

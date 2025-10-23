@@ -1,0 +1,33 @@
+.spinner {
+  width: 32px;  /* same as w-8 */
+  height: 32px; /* same as h-8 */
+  color: #e5e7eb; /* gray-200 */
+  animation: spin 1s linear infinite;
+  fill: #6366f1; /* indigo-600 */
+}
+
+.spinner path:first-child {
+  fill: currentColor; /* gray background */
+}
+
+.spinner path:last-child {
+  fill: currentFill; /* indigo spinner */
+  fill: #4f46e5;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

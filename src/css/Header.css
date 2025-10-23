@@ -1,0 +1,27 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  background-color: #ec7e00;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-tabs button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav-tabs button:hover {
+  color: #988885;
+  font-weight: bold;
+  transform: translateY(-2px);
+  background-color: #ff8800;
+  border-radius: 5px;
+}

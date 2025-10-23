@@ -1,0 +1,24 @@
+.recipe-card {
+  list-style: none;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.recipe-card-name {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}

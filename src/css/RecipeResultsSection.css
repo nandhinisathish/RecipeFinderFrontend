@@ -1,0 +1,15 @@
+.all-recipes h2 {
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-recipes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+  list-style: none; /* remove default list bullets */
+  padding: 0;
+  margin: 0;
+}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
-import useAuth from "../context/authContext/authContext.jsx";
+import {useAuth} from "../context/authContext/authContext.jsx";
 import "../App.css";
 import Search from "../components/Search";
 import RecipeResultsSection from "../components/RecipeResultsSection";
@@ -77,7 +77,7 @@ const Home = () => {
     <div>
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} SearchRecipes={SearchRecipes} />
       <RecipeResultsSection recipeList={recipeList} isLoading={isLoading} />
-      <FavouriteRecipes />
+      {/* <FavouriteRecipes /> */}
       
       {/* Random Recipe Section */}
       {/* <div className="random-recipe">

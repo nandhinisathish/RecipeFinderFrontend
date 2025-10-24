@@ -1,6 +1,6 @@
 import style from "./Forms.module.css";
 import { useState } from "react";
-import useAuth from "../../context/authContext/authContext";
+import {useAuth} from "../../context/authContext/authContext.jsx";
 import { useNavigate } from "react-router-dom";
 
 export default function LoginForm({ setNewUser }) {
@@ -18,9 +18,11 @@ export default function LoginForm({ setNewUser }) {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-      await login(formData);
-
-      nav("/dash");
+      const result = await login(formData);
+      if(result){
+        nav("/");
+      }
+      
     } catch (err) {
       console.error(err.message);
     }

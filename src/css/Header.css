@@ -25,3 +25,26 @@
   background-color: #ff8800;
   border-radius: 5px;
 }
+
+.favourites-nav {
+  position: absolute;
+  top: 60px; /* adjust as needed */
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+}
+
+.favourites-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.favourites-nav li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}

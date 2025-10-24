@@ -1,5 +1,5 @@
 import { useReducer, useState } from "react";
-import "../css/Search.css"
+import "../css/Search.css";
 
 
 // const reducer = (action, state) => {
@@ -27,6 +27,11 @@ const Search = ({searchTerm, setSearchTerm,  onRandomRecipeClick}) => {
         <form id="search-form" className="search-box">
          
           <input
+          style={{
+  maxWidth: "600px",
+  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.08)",
+  borderRadius: "8px"
+}}
             type="text"
             id="search-input"
             value={searchTerm}

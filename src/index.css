@@ -21,7 +21,8 @@ body {
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.7;
-  padding: 30px 15px;
+  /* padding: 30px 15px; */
+  
   background-color: var(--light-bg);
   color: var(--text-dark);
 }

@@ -13,8 +13,9 @@ const App = () => {
   const {cookies} = useAuth();
 
   return (
-   
-      <div style={{backgroundColor:"#faf8f8ff"}}>
+    <div className="app-wrapper">
+      {/* Background image behind everything */}
+      <div className="background-image"></div>
         <Header />
         <main>
           <Routes>

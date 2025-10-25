@@ -1,6 +1,6 @@
 import style from "./Forms.module.css";
 import { useState } from "react";
-import {useAuth} from "../../context/authContext/authContext.jsx";
+import { useAuth } from "../../context/authContext/authContext.jsx";
 import { useNavigate } from "react-router-dom";
 
 export default function LoginForm({ setNewUser }) {
@@ -19,10 +19,11 @@ export default function LoginForm({ setNewUser }) {
     e.preventDefault();
     try {
       const result = await login(formData);
-      if(result){
+      if (result.isValid) {
         nav("/");
+      } else {
+        console.log(`result message from login: `, result.msg);
       }
-      
     } catch (err) {
       console.error(err.message);
     }

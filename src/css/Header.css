@@ -6,6 +6,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+.nav-tabs{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .nav-tabs button {
@@ -13,7 +20,8 @@
   padding: 0.5rem 1rem;
   background: none;
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
   cursor: pointer;
   color: #fff;
 }
@@ -47,4 +55,35 @@
 .favourites-nav li {
   padding: 5px 0;
   border-bottom: 1px solid #eee;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem; 
+  color: #fff;
+  font-weight: 500;
+}
+
+.user-info button {
+  background: #fff;
+  color: #ec7e00;
+  border-radius: 5px;
+  padding: 0.3rem 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.user-info button:hover {
+  background: #ffe5d1;
+  transform: translateY(-1px);
+}
+
+
+.user-info span {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

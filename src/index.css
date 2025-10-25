@@ -27,4 +27,41 @@ body {
   color: var(--text-dark);
 }
 
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+
+/* Toast container centered on screen */
+.center-toast-container {
+  top: 50% !important; /* vertical center */
+  left: 50% !important; /* horizontal center */
+  transform: translate(-50%, -50%) !important;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.center-toast-container .Toastify__toast{
+  pointer-events: auto;
+}
+/* Pop-up animation */
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
 

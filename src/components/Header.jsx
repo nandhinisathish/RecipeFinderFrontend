@@ -7,6 +7,8 @@ const Header = ({ onRandomRecipeClick }) => {
   const { favourites } = useAppContext();
   const { cookies, logout } = useAuth();
   const isLoggedIn = Boolean(cookies.token);
+  const email = cookies.userEmail || "";
+  const username = email.split("@")[0];
   return (
     <header className="app-header">
       <h1 className="logo">🍽️ Recipe Finder</h1>
@@ -34,9 +36,10 @@ const Header = ({ onRandomRecipeClick }) => {
           </Link>
         )}
         {cookies.token && (
-          <Link>
+          <div className="user-info">
+          <span>{username}</span>
             <button onClick={logout}>Log Out</button>
-          </Link>
+          </div>
         )}
       </nav>
       {/* Favourites only for signed-in users */}
